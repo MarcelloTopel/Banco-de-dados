@@ -1,7 +1,7 @@
 create DATABASE agendamento;
 USE agendamento;
 
-CREATE TABLE IF NOT EXISTS Servicos (
+CREATE TABLE Servicos (
     ID INT PRIMARY KEY,
     Nome VARCHAR(50)
 );
@@ -14,7 +14,7 @@ INSERT INTO Servicos (ID, Nome) VALUES
 (5, 'Cirurgia'),
 (6, 'Exames Hematológicos');
 
-CREATE TABLE IF NOT EXISTS Animais (
+CREATE TABLE Animais (
     ID INT PRIMARY KEY,
     Nome VARCHAR(50),
     Idade INT,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS Animais (
     Telefone VARCHAR(20)
 );
 
-CREATE TABLE IF NOT EXISTS Horarios (
+CREATE TABLE    S Horarios (
     ID INT PRIMARY KEY,
     DiaSemana VARCHAR(10),
     HoraInicio TIME,
@@ -38,7 +38,7 @@ INSERT INTO Horarios (ID, DiaSemana, HoraInicio, HoraFim) VALUES
 (4, 'Quinta', '14:00:00', '18:00:00'),
 (5, 'Sexta', '14:00:00', '18:00:00');
 
-CREATE TABLE IF NOT EXISTS Agendamentos (
+CREATE TABLE Agendamentos (
     ID INT PRIMARY KEY,
     Data DATE,
     HorarioID INT,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS Agendamentos (
     FOREIGN KEY (ServicoID) REFERENCES Servicos(ID)
 );
 
-CREATE TABLE IF NOT EXISTS Block (
+CREATE TABLE Block (
     ID INT PRIMARY KEY,
     Data DATE,
     HorarioID INT,
