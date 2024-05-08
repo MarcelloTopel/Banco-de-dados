@@ -24,7 +24,7 @@ CREATE TABLE Animais (
     Telefone VARCHAR(20)
 );
 
-CREATE TABLE    S Horarios (
+CREATE TABLE Horarios (
     ID INT PRIMARY KEY,
     DiaSemana VARCHAR(10),
     HoraInicio TIME,
