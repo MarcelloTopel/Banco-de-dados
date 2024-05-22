@@ -36,11 +36,11 @@ CREATE TABLE Horarios (
 ) COMMENT 'Tabela contendo os horários disponíveis para agendamento';
 
 INSERT INTO Horarios (DiaSemana, HoraInicio, HoraFim) VALUES
-('Segunda', '14:00:00', '18:00:00'),
-('Terça', '14:00:00', '18:00:00'),
-('Quarta', '14:00:00', '18:00:00'),
-('Quinta', '14:00:00', '18:00:00'),
-('Sexta', '14:00:00', '18:00:00');
+('Segunda', '14:00:00', '17:00:00'),
+('Terça', '14:00:00', '17:00:00'),
+('Quarta', '14:00:00', '17:00:00'),
+('Quinta', '14:00:00', '17:00:00'),
+('Sexta', '14:00:00', '17:00:00');
 
 -- Tabela de Agendamentos
 CREATE TABLE Agendamentos (
